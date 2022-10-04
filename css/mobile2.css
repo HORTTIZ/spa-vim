@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-html {
+html, body {
   font-size: 62.5%;
   overflow: hidden;
 }
@@ -12,7 +12,7 @@ html {
 .container-menu-h {
     display: flex;
     width: 100%;
-    max-width: 32rem;
+    width: 32rem;
     height: 100vh;
     min-height: 60rem;
     position: absolute;
@@ -20,13 +20,13 @@ html {
 }
 
 .container-menu-h .content-menu-h {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    place-content: center;
+    display: flex;
+    justify-content: space-evenly;
+    place-items: center;
     position: fixed;
-    width: 26rem;
-    min-width: 20rem;
-    height: 6rem;
+    width: 17rem;
+    min-width: 10rem;
+    height: 5rem;
     max-height: 7rem;
     border: none;
     border-radius: 5rem;
@@ -39,9 +39,9 @@ html {
 .content-menu-h .container-home {
     display: grid;
     place-content: center;
-    width: 3.5rem;
-    height: 3.5rem;
-    margin: 0 1rem;
+    width: 3rem;
+    height: 3rem;
+    margin: 0 0 0 2rem;
     background-color: white;
     border: none;
     border-radius: 1rem;
@@ -49,17 +49,17 @@ html {
 }
 
 .container-home .img-home {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2rem;
+    height: 2rem;
     rotate: -45deg;
 }
 
 .content-menu-h .container-guide {
     display: grid;
     place-content: center;
-    width: 3.5rem;
-    height: 3.5rem;
-    margin: 0 1rem;
+    width: 3rem;
+    height: 3rem;
+    margin: 0 .5rem;
     background-color: white;
     border: none;
     border-radius: 1rem;
@@ -67,18 +67,17 @@ html {
 }
 
 .container-guide img {
-    width: 2.5rem;
-    max-width: 2.5rem;
-    height: 2.5rem;
+    width: 2rem;
+    height: 2rem;
     rotate: -45deg;
 }
 
 .content-menu-h .container-crown {
     display: grid;
     place-content: center;
-    width: 3.5rem;
-    height: 3.5rem;
-    margin: 0 1rem;
+    width: 3rem;
+    height: 3rem;
+    margin: 0 2rem 0 0;
     background-color: white;
     border: none;
     border-radius: 1rem;
@@ -86,15 +85,15 @@ html {
 }
 
 .container-crown img {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2rem;
+    height: 2rem;
     rotate: -45deg;
 }
 
 .container-main {
     margin: 0 auto;
     width: 100%;
-    max-width: 32rem;
+    width: 32rem;
     min-height: 6rem;
     height: auto;
     background-color: #E9E9E9;
@@ -106,9 +105,9 @@ html {
     align-items: center;
     margin: 0 auto;
     width: 100%;
-    max-width: 32rem;
+    width: 32rem;
     height: 6rem;
-    max-height: 6rem;
+    max-height: 10rem;
     background-color: white;
 }
 
@@ -122,6 +121,7 @@ html {
 }
 
 .container-text h1 {
+    display: inline-block;
     font-size: 1.6rem;
     user-select: none;
 }
@@ -131,9 +131,9 @@ html {
     place-content: center;
     margin: 0 1.5rem;
     width: 3.5rem;
-    min-width: 3.5rem;
+    min-width: 1rem;
     height: 3.5rem;
-    min-height: 3.5rem;
+    min-height: 1rem;
     border: none;
     border-radius: 50%;
     background-color: black;
@@ -147,7 +147,7 @@ html {
 .content-main {
     width: 100%;
     min-width: 32rem;
-    max-width: 32rem;
+    width: 32rem;
     height: auto;
     min-height: 60rem;
     margin: 0 auto;
@@ -155,10 +155,8 @@ html {
 }
 
 .content-main .container-nav-line {
-    width: 100%;
-    max-width: 32rem;
+    width: 32rem;
     height: .4rem;
-    max-height: .4rem;
 }
 
 .container-nav-line .nav-line {
@@ -170,8 +168,7 @@ html {
 
 .content-main .container-items-page {
     display: grid;
-    width: 100%;
-    max-width: 32rem;
+    width: 32rem;
     height: auto;
     min-height: 6rem;
     background: transparent;
@@ -179,9 +176,7 @@ html {
 
 .container-items-page .container-img-logo {
     width: 100%;
-    max-width: 32rem;
     height: auto;
-    min-height: 20rem;
     background-color: white;
     margin: 0 auto;
 }
@@ -189,9 +184,7 @@ html {
 .container-img-logo img{
     display: flex;
     width: 20rem;
-    max-width: 30rem;
     height: 20rem;
-    max-height: 30rem;
     margin: 0 auto;
 }
 
@@ -207,9 +200,7 @@ html {
 .content-home img {
     display: flex;
     width: 60%;
-    max-width: 21rem;
-    height: 2.5rem;
-    max-height: 2.8rem;
+    height: 2.3rem;
     border: none;
     border-end-start-radius: 1rem;
     border-end-end-radius: 1rem;
@@ -218,13 +209,15 @@ html {
 .container-previews {
     display: inline-flex;
     width: 32rem;
-    max-width: 32rem;
+    min-width: 32rem;
+    height: auto;
     overflow: hidden;
 }
 
 .content {
-    display: inline-flex;
-    place-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    align-items: center;
     transform: translateX(0);
     margin: 1rem auto;
     height: 20rem;
@@ -234,17 +227,87 @@ html {
     transition: transform 0.3s ease-out;
     cursor: grab;
 }
-.container-previews .content-previews {
+
+.content .content-previews {
+    display: grid;
     max-height: 100vh;
     width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: 0 auto;
 }
+
 .content-previews img {
     width: 30rem;
-    max-width: 100%;
     height: 16.8rem;
-    max-height: 100%;
     transition: transform 0.3s ease-in-out;
+    margin: 0 0 0 1rem;
+}
+
+/* MEDIA QUERY'S */
+
+@media (min-width: 360px) {
+    .container-menu-h {
+        width: 360px;
+    }
+    .container-menu-h .content-menu-h {
+        background-color: red;
+        width: 20rem;
+    }
+    .container-main {
+        width: 36rem;
+    }
+    .container-main .nav {
+        width: 36rem;
+        height: 6.5rem;
+    }
+    .nav .container-text {
+        width: auto;
+        height: auto;
+    }
+    .container-text h1 {
+        font-size: 1.8rem;
+    }
+    .nav .container-theme {
+        width: 3rem;
+        height: 3rem;
+    }
+    .container-theme img {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .content-main {
+        width: 36rem;
+    }
+    .content-main .container-nav-line {
+        width: 36rem;
+        height: .7rem;
+    }
+    .container-nav-line .nav-line {
+        height: .7rem;
+    }
+    .content-main .container-items-page {
+        width: 36rem;
+        height: 18rem;
+        display: grid;
+        background-color: white;
+    }
+    .container-img-logo img {
+       width: 18rem;
+       height: 18rem;
+    }
+    .content-home img {
+        width: 50%;
+        height: 2.2rem;
+    }
+    .container-previews {
+        width: 36rem;
+        margin: 2.5rem auto;
+    }
+    .content {
+        background-color: red;
+    }
+    .content-previews img {
+        width: 32rem;
+        height: 20rem;
+        margin: 0 0 0 2rem;
+    }
 }
