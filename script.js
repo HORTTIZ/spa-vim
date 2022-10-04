@@ -1,4 +1,4 @@
-const slider = document.querySelector('.container-previews'),
+const slider = document.querySelector('.content'),
     slides = Array.from(document.querySelectorAll('.content-previews'));
 
 let isDragging = false,

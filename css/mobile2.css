@@ -217,15 +217,20 @@ html {
 
 .container-previews {
     display: inline-flex;
-    place-content: center;
+    width: 32rem;
+    max-width: 32rem;
     overflow: hidden;
+}
+
+.content {
+    display: inline-flex;
+    place-content: center;
     transform: translateX(0);
     margin: 1rem auto;
     height: 20rem;
     min-height: 15rem;
     background-color: transparent;
     scrollbar-width: none;
-    will-change: transform;
     transition: transform 0.3s ease-out;
     cursor: grab;
 }
