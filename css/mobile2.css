@@ -249,7 +249,11 @@ html, body {
         width: 360px;
     }
     .container-menu-h .content-menu-h {
+<<<<<<< HEAD
         background-color: black;
+=======
+        background-color: red;
+>>>>>>> a9317c5408dff60e81869dc8b5a32dfc8eeeefd5
         width: 20rem;
     }
     .container-main {
@@ -303,7 +307,11 @@ html, body {
         margin: 2.5rem auto;
     }
     .content {
+<<<<<<< HEAD
         background-color: transparent;
+=======
+        background-color: red;
+>>>>>>> a9317c5408dff60e81869dc8b5a32dfc8eeeefd5
     }
     .content-previews img {
         width: 32rem;
